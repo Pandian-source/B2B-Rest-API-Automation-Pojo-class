@@ -35,7 +35,6 @@ this.directFlights = directFlights;
 public Boolean getFreeBaggage() {
 return freeBaggage;
 }
-
 public void setFreeBaggage(Boolean freeBaggage) {
 this.freeBaggage = freeBaggage;
 }

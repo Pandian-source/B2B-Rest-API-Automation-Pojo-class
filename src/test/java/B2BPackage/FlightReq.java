@@ -30,6 +30,7 @@ private List<Sector> sectors = null;
 @SerializedName("passengers")
 @Expose
 private Passengers passengers;
+
 @SerializedName("extra_options")
 @Expose
 private ExtraOptions extraOptions;

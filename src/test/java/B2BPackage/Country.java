@@ -16,7 +16,6 @@ private List<String> country = null;
 public String getCountryType() {
 return countryType;
 }
-
 public void setCountryType(String countryType) {
 this.countryType = countryType;
 }

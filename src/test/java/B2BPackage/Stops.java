@@ -28,5 +28,4 @@ return stops;
 public void setStops(List<String> stops) {
 this.stops = stops;
 }
-
 }

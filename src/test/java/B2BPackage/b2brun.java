@@ -2,8 +2,6 @@ package B2BPackage;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
@@ -21,7 +19,7 @@ import io.restassured.specification.RequestSpecification;
 import B2BPackage.Airlines;
 import B2BPackage.Country;
 public class b2brun {
-
+	
 @Test
 public void B2BFlightRestAPIAutomation()
 		{
@@ -99,15 +97,15 @@ public void B2BFlightRestAPIAutomation()
 			
 			//STOPS FILTER//
 			
-			Stops stops = new Stops();
-			flightReq.setStops(stops);
-			stops.setStopType("include");
+			//Stops stops = new Stops();
+			//flightReq.setStops(stops);
+			//stops.setStopType("include");
 			
 			
-			ArrayList<String>allstops = new ArrayList<String>();
-			allstops.add("CMB");
-			allstops.add("MAA");
-			stops.setStops(allstops);
+			//ArrayList<String>allstops = new ArrayList<String>();
+			//allstops.add("CMB");
+			//allstops.add("MAA");
+			//stops.setStops(allstops);
 			
 		    Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		    String jsonEmp = gson.toJson(firstb2btest);
@@ -125,16 +123,13 @@ public void B2BFlightRestAPIAutomation()
 			requestspecification.header("Authorization", "c20ad4d76fe97759aa27a0c99bff67101585545954");
 			
 			//B2C API TESTING
-			requestspecification.header("portal-origin", "https://b2cui2.tltid.com/lk/");
+			//requestspecification.header("portal-origin", "https://b2cui2.tltid.com/lk/");
 			
 			requestspecification.body(jsonEmp);
 			Response response= requestspecification.request(Method.POST,"/api/flights/getResult/deal");
 		    String responseBody = response.getBody().asString();
 			System.out.println("Response body is:"+responseBody);
-			int status_code = response.getStatusCode();
-			Assert.assertEquals(status_code, "200");
-			String status = response.jsonPath().get("status");
-			Assert.assertEquals(status, status_code);
+			
 			
 		}
 }

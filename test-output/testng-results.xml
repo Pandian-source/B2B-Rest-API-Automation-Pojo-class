@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="82" started-at="2020-12-19T17:49:17 IST" finished-at="2020-12-19T17:49:17 IST">
+  <suite name="Default suite" duration-ms="36360" started-at="2020-12-25T11:16:21 IST" finished-at="2020-12-25T11:16:57 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="82" started-at="2020-12-19T17:49:17 IST" finished-at="2020-12-19T17:49:17 IST">
+    <test name="Default test" duration-ms="36360" started-at="2020-12-25T11:16:21 IST" finished-at="2020-12-25T11:16:57 IST">
       <class name="B2BPackage.b2brun">
-        <test-method status="PASS" signature="B2BFlightRestAPIAutomation()[pri:0, instance:B2BPackage.b2brun@1f554b06]" name="B2BFlightRestAPIAutomation" duration-ms="51" started-at="2020-12-19T17:49:17 IST" finished-at="2020-12-19T17:49:17 IST">
+        <test-method status="PASS" signature="B2BFlightRestAPIAutomation()[pri:0, instance:B2BPackage.b2brun@1f554b06]" name="B2BFlightRestAPIAutomation" duration-ms="36330" started-at="2020-12-25T11:16:21 IST" finished-at="2020-12-25T11:16:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- B2BFlightRestAPIAutomation -->

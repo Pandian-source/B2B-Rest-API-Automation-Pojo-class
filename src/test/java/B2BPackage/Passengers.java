@@ -34,7 +34,6 @@ return adult;
 public void setAdult(Integer adult) {
 this.adult = adult;
 }
-
 public Integer getChild() {
 return child;
 }

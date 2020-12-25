@@ -56,7 +56,6 @@ this.origin = origin;
 public String getOriginNearByAirport() {
 return originNearByAirport;
 }
-
 public void setOriginNearByAirport(String originNearByAirport) {
 this.originNearByAirport = originNearByAirport;
 }
